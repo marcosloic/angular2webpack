@@ -1,6 +1,6 @@
 #Angular2 starter with webpack and Firebase
 
-This is my development workflow for Angular2. It borrows heavily from the AngularClass starter kit, altered to suit my needs.
+This is my development workflow for Angular2. It borrows a lot from the AngularClass starter kit, altered to suit my needs.
 
 ####How to start
 
