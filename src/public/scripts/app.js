@@ -40,9 +40,9 @@ webpackJsonp([0],{
 	var x_large_1 = __webpack_require__(264);
 	var home_1 = __webpack_require__(265);
 	var App = (function () {
-	    function App(title) {
-	        this.title = title;
+	    function App() {
 	        this.url = 'https://twitter.com/AngularClass';
+	        this.title = 'World';
 	    }
 	    App = __decorate([
 	        core_1.Component({
@@ -51,12 +51,12 @@ webpackJsonp([0],{
 	            directives: router_1.ROUTER_DIRECTIVES.concat([x_large_1.XLarge]),
 	            pipes: [],
 	            styles: ["\n    .title {\n      font-family: Arial, Helvetica, sans-serif;\n    }\n    main {\n      padding: 1em;\n    }\n\n  "],
-	            template: "\n    <header>\n      <h1 class=\"title\">Hello {{ title.value }}</h1>\n      <nav>\n        <a [routerLink]=\" ['Home'] \">Home</a>\n      </nav>\n    </header>\n\n    <main>\n      <router-outlet></router-outlet>\n    </main>\n\n    <footer x-large>\n      WebPack Angular 2 Starter by <a [href]=\"url\">@AngularClass</a>\n    </footer>\n  "
+	            template: "\n    <header>\n      <h1 class=\"title\">Hello {{ title.value }}</h1>\n      <nav>\n        <a [routerLink]=\" ['Home'] \">Home</a>\n      </nav>\n    </header>\n\n    <main>\n      <router-outlet></router-outlet>\n    </main>\n  "
 	        }),
 	        router_1.RouteConfig([
 	            { path: '/', component: home_1.Home, name: 'Home' }
 	        ]), 
-	        __metadata('design:paramtypes', [title_1.Title])
+	        __metadata('design:paramtypes', [])
 	    ], App);
 	    return App;
 	})();
@@ -80,7 +80,7 @@ webpackJsonp([0],{
 	var core_1 = __webpack_require__(22);
 	var Title = (function () {
 	    function Title() {
-	        this.value = 'Angular 2';
+	        this.value = 'Angular22';
 	    }
 	    Title = __decorate([
 	        core_1.Injectable(), 
@@ -145,7 +145,7 @@ webpackJsonp([0],{
 	        this.http = http;
 	    }
 	    Home.prototype.ngOnInit = function () {
-	        console.log('hello Home');
+	        console.log('hello Homesss');
 	    };
 	    Home = __decorate([
 	        core_1.Component({
@@ -175,7 +175,7 @@ webpackJsonp([0],{
 /***/ 267:
 /***/ function(module, exports) {
 
-	module.exports = "<div>\n  Your Content Here\n  <input type=\"text\" [value]=\"title.value\" (input)=\"title.value = $event.target.value\" autofocus>\n  <!--\n    Rather than wiring up two-way data-binding ourselves\n    we can use Angular's [(ngModel)] syntax\n    <input type=\"text\" [(ngModel)]=\"title.value\">\n  -->\n\n  <pre>this.title = {{ title | json }}</pre>\n</div>\n"
+	module.exports = "<div>\n\t<p>This is a home componentss</p>\n</div>\n"
 
 /***/ }
 

@@ -23,7 +23,7 @@ module.exports = {
 
   // Config for our build files
   output: {
-    path: root('src/public/scripts'),
+    path: root('/src/public/scripts'),
     filename: '[name].js',
     sourceMapFilename: '[name].map',
     chunkFilename: '[id].chunk.js'
@@ -79,7 +79,7 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     contentBase: 'src/public',
-    publicPath: 'src/public/scripts'
+    publicPath: '/scripts'
   }
 };
 
